@@ -1,0 +1,16 @@
+{
+    "imgurl":"trololo",
+    "events":[{
+        "req":[],
+        "text":"Test Floor 0",
+        "take":[],
+        "give":[],
+        "once":false
+    },{
+        "req":[0],
+        "text":"After floor 1 yippie",
+        "take":[],
+        "give":[],
+        "once":false
+    }]
+}
