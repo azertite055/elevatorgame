@@ -1,6 +1,16 @@
 var floor = 1;
 var items = [];
 var hasEvent = Array(10000).fill([]);
+var itemData = {};
+window.fetch(`items.json`).then((r) => {
+    if(!r.ok){
+        throw new Error(`erm what the sigma ${r.status}`);
+    }
+    return r.json()
+}).then((idata) => {
+    itemData = idata;
+});
+
 function goToFloor(f){
     if (typeof f != "number" || f < 1 || f > 10000 || f != Math.floor(f)){
         window.alert("Nice try.");
@@ -19,6 +29,7 @@ function goToFloor(f){
 }
 function update(d, f){
     var floorText = "";
+    var inventoryText = "";
     el: for (let i = 0; i<d.events.length; i++){
         e = d.events[i];
         for (r of e.req){
@@ -41,6 +52,13 @@ function update(d, f){
             }
         }
     }
+    for (let i of items){ //why won't you work??????????????????????????????????????????????????????
+        inventoryText += `<div class="itembox">
+        <span class="iteming">&#x200B;</span>
+        </div>`;
+    }
+    console.log(inventoryText);
     document.getElementById("ddesc").innerHTML = `-=- Floor ${f} -=-${floorText}`;
-    document.getElementById("dimage").style.backgroundImage = `url(${d.imgurl})`
+    document.getElementById("dimage").style.backgroundImage = `url(${d.imgurl})`;
+    document.getElementById("inventory").innerHTML = inventoryText;
 }

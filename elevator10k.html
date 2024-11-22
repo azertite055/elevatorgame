@@ -26,11 +26,33 @@ td {
 #dimage {
 	display: block;
 	margin: auto;
-	height: 600px;
-	width: 800px;
+	height: 400px;
+	width: 600px;
 	outline: 2px solid black;
 }
-
+#inventory {
+	outline: 2px solid black;
+	margin: auto;
+	width: 940px;
+	height: 300px;
+	overflow: scroll;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.itembox {
+	display: block;
+	width:106px;
+	height: fit-content;
+	margin: 8px;
+	outline: 2px solid black;
+}
+.itemimg {
+	display: block;
+	width: 100px;
+	height: 100px;
+	outline: 2px solid black;
+}
 </style>
 </head>
 <body>
@@ -46,6 +68,6 @@ td {
  	</div>
 	<br>
 	<div class="centered">Inventory</div>
-	<table class="centered" id="inventory"></table>
+	<div class="centered" id="inventory"></div>
 	<script src="elevator10k.js"></script>
 </body>
