@@ -1,0 +1,10 @@
+{
+    "imgurl":"123456789.png",
+    "events":[{
+        "req":[],
+        "text":"Test Floor 1",
+        "take":[],
+        "give":[0],
+        "once":false
+    }]
+}
