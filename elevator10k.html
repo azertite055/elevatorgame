@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>10000 floor elevator thing</title>
+<style>
+body {
+	background-color: white;
+	font-family: courier;
+	font-size: 16px;
+}
+table {
+	text-align: left;
+	border: 1px solid black;
+	border-spacing: 1px;
+}
+td {
+	border: 1px solid black;
+}
+.centered {
+	text-align: center;
+}
+#display {
+	padding: 16px;
+	outline: 2px solid black;
+}
+#dimage {
+	display: block;
+	margin: auto;
+	height: 600px;
+	width: 800px;
+	outline: 2px solid black;
+}
+
+</style>
+</head>
+<body>
+    <div class="centered">coolboymoney123's awesome 10000-floor elevator</div>
+	<br>
+	<div id="display" class="centered">
+		<span id="dimage"></span><br>
+		<div id="ddesc">Welcome to the elevator! Enter a floor number to get started.</div>
+	</div>
+	<br>
+	<div class="centered">
+		<input id="finput" name="finput" type="number" min="1" max="10000" step="1"><button onclick="goToFloor(Number(finput.value))">Go to floor</button>
+ 	</div>
+	<br>
+	<div class="centered">Inventory</div>
+	<table class="centered" id="inventory"></table>
+	<script src="elevator10k.js"></script>
+</body>
