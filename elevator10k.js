@@ -43,22 +43,29 @@ function update(d, f){
         //event updates run here
         hasEvent[f].push(i);
         floorText += `<br>${e.text}`;
-        for (let g of e.give){
-            items.push(g);
-        }
         for (let t of e.take){
             if (items.indexOf(t) > -1){
             items = items.slice(0, items.indexOf(t)).concat(items.slice(items.indexOf(t)+1, items.length));
             }
         }
+        for (let g of e.give){
+            items.push(g);
+        }
     }
-    for (let i of items){ //why won't you work??????????????????????????????????????????????????????
-        inventoryText += `<div class="itembox">
-        <span class="iteming">&#x200B;</span>
-        </div>`;
+    console.log(items);
+    document.getElementById("inventory").innerHTML = "";
+    for (let i=0; i<items.length; i++){
+        var ib = document.getElementById("inventory").appendChild(document.createElement("div"));
+        ib.classList.add("itembox");
+        ib.style.backgroundImage = `url(${itemData[items[i]].imgurl})`;
+        ib.onmouseenter = () => {
+            document.getElementById("itemname").textContent = itemData[items[i]].name;
+        }
+        ib.onmouseleave = () => {
+            document.getElementById("itemname").textContent = "\xa0";
+        }
     }
     console.log(inventoryText);
     document.getElementById("ddesc").innerHTML = `-=- Floor ${f} -=-${floorText}`;
     document.getElementById("dimage").style.backgroundImage = `url(${d.imgurl})`;
-    document.getElementById("inventory").innerHTML = inventoryText;
 }
