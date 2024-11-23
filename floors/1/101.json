@@ -1,0 +1,10 @@
+{
+    "imgurl":"feet",
+    "events":[{
+        "req":[],
+        "text":"Test Floor 101 sigma placeholder",
+        "take":[],
+        "give":[],
+        "once":false
+    }]
+}
