@@ -58,6 +58,7 @@ function update(d, f){
         var ib = document.getElementById("inventory").appendChild(document.createElement("div"));
         ib.classList.add("itembox");
         ib.style.backgroundImage = `url(${itemData[items[i]].imgurl})`;
+        ib.style.backgroundSize = "100% 100%";
         ib.onmouseenter = () => {
             document.getElementById("itemname").textContent = itemData[items[i]].name;
         }
