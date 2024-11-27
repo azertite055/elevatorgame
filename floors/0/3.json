@@ -2,7 +2,7 @@
     "imgurl":"https://i.postimg.cc/pd5BQnPB/image-2024-11-27-133019888.png",
     "events":[{
         "req":[],
-        "text":"you have been placed into the home depot, heres a link! https://www.homedepot.com.",
+        "text":"you have been placed into the home depot, heres a link! <a href='https://www.homedepot.com'>https://www.homedepot.com</a>.",
         "take":[],
         "give":[1],
         "once":false
