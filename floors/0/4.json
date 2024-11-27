@@ -1,0 +1,10 @@
+{
+      "imgurl":"https://marvel-b1-cdn.bc0a.com/f00000000296019/mallmaverick.imgix.net/web/property_managers/1/properties/718/all/20240711190029/NEW_STOREFRONTS__1_.png?auto=format,compress",
+    "events":[{
+        "req":[],
+        "text":"You found a macys",
+        "take":[],
+        "give":[2,3],
+        "once":false
+    }]
+}
