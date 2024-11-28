@@ -1,7 +1,9 @@
 var floor = 1;
 var items = [];
 var hasEvent = Array(10000).fill([]);
+var visited = [];
 var itemData = {};
+var fvars = {};
 window.fetch(`items.json`).then((r) => {
     if(!r.ok){
         throw new Error(`erm what the sigma ${r.status}`);
@@ -41,20 +43,33 @@ function memberCheck(a, x){
     return true;
 }
 function update(d, f){
+    if (!visited.includes(f)){
+        fvars[f] = {};
+        for (let i of d.initvars){
+            f[i[0]] = i[1];
+        }
+        visited.push(f);
+    }
+    var overrides = [];
     var floorText = "";
     var inventoryText = "";
     el: for (let i = 0; i<d.events.length; i++){
         e = d.events[i];
         e.chance = e.chance || 1;
         e.code = e.code || "";
-        if (!memberCheck(items, e.req)){
+        e.override = e.override || [];
+        if (!memberCheck(items, e.req) || (e.once && hasEvent[f].includes(i))){
             continue el;
         }
         if (Math.random() > e.chance){
             continue el;
         }
+        if (overrides.includes(i)){
+            continue el;
+        }
         //event updates run here
         hasEvent[f].push(i);
+        overrides.concat(e.override);
         floorText += `<br>${e.text}`;
         for (let t of e.take){
             if (items.indexOf(t) > -1){
@@ -64,7 +79,7 @@ function update(d, f){
         for (let g of e.give){
             items.push(g);
         }
-        eval(e.code);
+        eval(`var v=fvars[f]; ${e.code}`);
     }
     document.getElementById("inventory").innerHTML = "";
     for (let i=0; i<items.length; i++){
