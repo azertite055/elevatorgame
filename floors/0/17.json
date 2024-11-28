@@ -1,0 +1,10 @@
+{
+    "imgurl":"https://ktla.com/wp-content/uploads/sites/4/2022/11/GettyImages-1436949551.jpg?w=2121&h=1414&crop=1",
+    "events":[{
+        "req":[],
+        "text":"You go to eat dinner with your family, happy thanks giving!",
+        "take":[],
+        "give":[15],
+        "once":false
+    }]
+}
