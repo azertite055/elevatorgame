@@ -1,0 +1,16 @@
+{
+    "imgurl":"https://denoutdoors.com/cdn/shop/articles/IMG_0688.jpg?v=1702405560",
+    "events":[{
+        "req":[1],
+        "text":"You now have a job building a house, Yippee!",
+        "take":[1],
+        "give":[4,4],
+        "once":false
+    },{
+        "req":[],
+        "text":"You find a house under construction",
+        "take":[],
+        "give":[],
+        "once":false
+    }]
+}
