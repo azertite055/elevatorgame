@@ -43,6 +43,7 @@ function memberCheck(a, x){
     return true;
 }
 function update(d, f){
+    d.initvars = d.initvars || [];
     if (!visited.includes(f)){
         fvars[f] = {};
         for (let i of d.initvars){
