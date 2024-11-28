@@ -45,7 +45,12 @@ function update(d, f){
     var inventoryText = "";
     el: for (let i = 0; i<d.events.length; i++){
         e = d.events[i];
+        e.chance = e.chance || 1;
+        e.code = e.code || "";
         if (!memberCheck(items, e.req)){
+            continue el;
+        }
+        if (Math.random() > e.chance){
             continue el;
         }
         //event updates run here
@@ -59,8 +64,8 @@ function update(d, f){
         for (let g of e.give){
             items.push(g);
         }
+        eval(e.code);
     }
-    console.log(items);
     document.getElementById("inventory").innerHTML = "";
     for (let i=0; i<items.length; i++){
         var ib = document.getElementById("inventory").appendChild(document.createElement("div"));
