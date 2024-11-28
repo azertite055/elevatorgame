@@ -2,13 +2,13 @@
     "imgurl":"https://i.postimg.cc/v8pt7wXd/image-2024-11-28-074141689.png",
     "events":[{
         "req":[],
-        "text":"ya",
+        "text":"Bottom of the elevator, the enterance.",
         "take":[],
         "give":[],
         "once":false
     },{
         "req":[0],
-        "text":"You found the enterance, YIPPE!",
+        "text":"ya",
         "take":[],
         "give":[],
         "once":false
