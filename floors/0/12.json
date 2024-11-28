@@ -1,0 +1,10 @@
+{
+    "imgurl":"https://i.postimg.cc/DZSYZdfQ/JCPENNEU.png",
+    "events":[{
+        "req":[],
+        "text":"You are now at a Jcpenney, you found a gun on the floor.",
+        "take":[],
+        "give":[14,2],
+        "once":false
+    }]
+}
