@@ -1,0 +1,17 @@
+{
+    "imgurl":"https://ermat-industries.com/fr/img/img21.gif",
+    "events":[{
+        "req":[],
+        "text":"You have found the furnace. It is so hot in here...",
+        "take":[],
+        "give":[],
+        "once":false
+    },
+    {
+        "req":[8],
+        "text":"Your pizza was burnt :(",
+        "take":[8],
+        "give":[16],
+        "once":false
+    }]
+}

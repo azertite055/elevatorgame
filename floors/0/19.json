@@ -1,0 +1,16 @@
+{
+    "imgurl":"https://kuosiequipment.com/wp-content/uploads/2022/10/Aeration-tank-in-activated-sludge-treatment.png",
+    "events":[{
+        "req":[],
+        "text":"You fond the SLUDGE room! You are scared",
+        "take":[],
+        "give":[],
+        "once":false
+    },{
+        "req":[0],
+        "text":"The barbecue sauce was consumed by the sludge. Oops!",
+        "take":[0],
+        "give":[],
+        "once":false
+    }]
+}
