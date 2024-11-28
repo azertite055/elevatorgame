@@ -1,0 +1,23 @@
+{
+    "imgurl":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Wynn_Casino_Las_Vegas_Gambling_Resort.jpg/220px-Wynn_Casino_Las_Vegas_Gambling_Resort.jpg",
+    "events":[{
+        "req":[],
+        "text":"You see a casino! let's go gambling!",
+        "take":[],
+        "give":[],
+        "once":false
+    },{
+        "req":[4],
+        "chance":0.001,
+        "text":"BIG WIN!!!! A GAZILLION DOLLARS!!!!",
+        "take":[],
+        "give":[13],
+        "once":false
+    },{
+        "req":[4],
+        "text":"You played a dollar...",
+        "take":[4],
+        "give":[],
+        "once":false
+    }]
+}
