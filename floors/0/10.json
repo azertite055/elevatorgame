@@ -1,0 +1,16 @@
+{
+    "imgurl":"https://ak.picdn.net/shutterstock/videos/1044026437/thumb/7.jpg?ip=x480",
+    "events":[{
+        "req":[],
+        "text":"You found slenderman's forest. HE says: 'Collect my pages...'",
+        "take":[],
+        "give":[],
+        "once":false
+    },{
+        "req":[9,9,9,9,9,9,9,9],
+        "text":"Slender says: 'Thank you'. HE gives you a biiig hug. and an airpod",
+        "take":[9,9,9,9,9,9,9,9],
+        "give":[10,11],
+        "once":false
+    }]
+}
