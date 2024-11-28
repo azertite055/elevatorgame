@@ -1,14 +1,14 @@
 {
-    "imgurl":"trololo",
+    "imgurl":"https://i.postimg.cc/v8pt7wXd/image-2024-11-28-074141689.png",
     "events":[{
         "req":[],
-        "text":"Test Floor 0",
+        "text":"ya",
         "take":[],
         "give":[],
         "once":false
     },{
         "req":[0],
-        "text":"After floor 1 yippie",
+        "text":"You found the enterance, YIPPE!",
         "take":[],
         "give":[],
         "once":false

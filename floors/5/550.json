@@ -1,0 +1,16 @@
+{
+    "imgurl":"https://table.skift.com/wp-content/uploads/2018/12/Inside-e1544030171179.jpg",
+    "events":[{
+        "req":[4],
+        "text":"you buy a cheese pizza, tasty!",
+        "take":[4],
+        "give":[8],
+        "once":false
+    },{
+        "req":[],
+        "text":"You are now at a pizza hut.",
+        "take":[],
+        "give":[],
+        "once":false
+    }]
+}
