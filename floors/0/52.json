@@ -1,0 +1,10 @@
+{
+    "imgurl":"https://clipart-library.com/image_gallery/151925.png",
+    "events":[{
+        "req":[],
+        "text":"Congratulation, you got a job! You have earned one dollar.",
+        "take":[],
+        "give":[4],
+        "once":false
+    }]
+}

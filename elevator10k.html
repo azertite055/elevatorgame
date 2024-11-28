@@ -29,6 +29,7 @@ td {
 	height: 400px;
 	width: 600px;
 	outline: 2px solid black;
+	background-size: 100% 100%;
 }
 #inventory {
 	outline: 2px solid black;
@@ -60,6 +61,7 @@ td {
 	<br>
 	<div class="centered">
 		<input id="finput" name="finput" type="number" min="1" max="10000" step="1"><button onclick="goToFloor(Number(finput.value))">Go to floor</button>
+		<button onclick="finput.value=Math.ceil(Math.random()*10000)">Random</button>
  	</div>
 	<br>
 	<div class="centered">Inventory</div>

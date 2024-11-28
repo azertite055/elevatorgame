@@ -1,0 +1,16 @@
+{
+    "imgurl":"https://thomsonsafaris.com/wp-content/uploads/2022/10/termite-mound-with-holes.jpg",
+    "events":[{
+        "req":[],
+        "text":"You found a termite mound.",
+        "take":[],
+        "give":[],
+        "once":false
+    },{
+        "req":[1],
+        "text":"Oh no!!!! The termites are eating your wood!",
+        "take":[1],
+        "give":[],
+        "once":false
+    }]
+}

@@ -27,18 +27,26 @@ function goToFloor(f){
         update(fdata, f);
     });
 }
+function memberCheck(a, x){
+    var tracked = Array(a.length).fill(false);
+    out: for (let i of x){
+        for (let j=0; j<a.length; j++){
+            if (a[j] == i && !tracked[j]){
+                tracked[j] = true;
+                continue out;
+            }
+        }
+        return false;
+    }
+    return true;
+}
 function update(d, f){
     var floorText = "";
     var inventoryText = "";
     el: for (let i = 0; i<d.events.length; i++){
         e = d.events[i];
-        for (r of e.req){
-            if (!items.includes(r)){
-                continue el; //skip to checking next event
-            }
-        }
-        if (e.once && hasEvent[f].includes(i)){
-            continue; //skip one-time events
+        if (!memberCheck(items, e.req)){
+            continue el;
         }
         //event updates run here
         hasEvent[f].push(i);

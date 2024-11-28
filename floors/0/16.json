@@ -1,0 +1,16 @@
+{
+    "imgurl":"https://c1.staticflickr.com/8/7265/13653490605_dc3d80e168_b.jpg",
+    "events":[{
+        "req":[],
+        "text":"You see an outback steakhouse. This is awesome yo",
+        "take":[],
+        "give":[],
+        "once":false
+    },{
+        "req":[0],
+        "text":"Yummers!",
+        "take":[0],
+        "give":[],
+        "once":false
+    }]
+}
